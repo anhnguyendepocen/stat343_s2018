@@ -1,0 +1,141 @@
+---
+title: "Schedule"
+---
+
+**Click on the text like "Week 1: Jan 22 -- 26" to expand or collapse the items we covered in that week.**
+
+I will fill in more detail and provide links to lecture notes and labs as we go along.  Items for future dates are tentative and subject to change.
+
+```{r, echo = FALSE}
+make_week_box <- function(id, open, title, contents) {
+  cat('
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingOne">
+<h5 class="mb-0">
+<a data-toggle="collapse" href="#',
+id,
+'" aria-expanded="true" aria-controls="collapseOne">
+',
+title,
+'</a>
+</h5>
+</div>
+
+<div id="',
+id,
+'" class="collapse',
+ifelse(open, " in", ""),
+'">
+<div class="panel-body">
+',
+contents,
+'
+</div>
+</div>
+</div>',
+  sep = "")
+}
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
+"Chapter 1: Observational Units, Categorical and Quantitative Variables
+
+#### Tue, Jan 23
+
+ * **In class**, we will work on:
+    * Not yet planned
+ * **After class**, please do the following:
+    * Not yet planned
+
+#### Thu, Jan 25
+
+#### Fri, Jan 26
+"
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week2", TRUE, "Week 2: Jan 29 -- Feb 2",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week4", TRUE, "Week 4: Feb 12 -- 16",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week5", TRUE, "Week 5: Feb 19 -- 23",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week6", TRUE, "Week 6: Feb 26 -- Mar 2",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week7", TRUE, "Week 7: Mar 5 -- 9",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week8", TRUE, "Week 8: Mar 12 -- 16",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week9", TRUE, "Week 9: Mar 19 -- 23",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week10", TRUE, "Week 10: Mar 26 -- 30",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week11", TRUE, "Week 11: Apr 2 -- 6",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week12", TRUE, "Week 12: Apr 9 -- 13",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week13", TRUE, "Week 13: Apr 16 -- 20",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("week14", TRUE, "Week 14: Apr 23 -- 27",
+""
+  )
+```
+
+```{r, echo = FALSE, results='asis'}
+make_week_box("finals", TRUE, "Final Exams: Thu, May 3 at 7pm -- Mon, May 7 at noon",
+"We will have a cumulative final exam.
+"
+  )
+```
