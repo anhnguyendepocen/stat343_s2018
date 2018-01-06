@@ -57,79 +57,165 @@ make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week2", TRUE, "Week 2: Jan 29 -- Feb 2",
-""
+"
+
+#### Tue, Jan 30
+
+#### Thu, Feb 1
+
+#### Fri, Feb 2
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
-""
+"
+
+#### Tue, Feb 6
+
+#### Thu, Feb 8
+
+#### Fri, Feb 9
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week4", TRUE, "Week 4: Feb 12 -- 16",
-""
+"
+
+#### Tue, Feb 13
+
+#### Thu, Feb 15
+
+#### Fri, Feb 16
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week5", TRUE, "Week 5: Feb 19 -- 23",
-""
+"
+
+#### Tue, Feb 20
+
+#### Thu, Feb 22
+
+#### Fri, Feb 23
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week6", TRUE, "Week 6: Feb 26 -- Mar 2",
-""
+"
+
+#### Tue, Feb 27
+
+#### Thu, Mar 1
+
+#### Fri, Mar 2
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week7", TRUE, "Week 7: Mar 5 -- 9",
-""
+"
+
+#### Tue, Mar 6
+
+#### Thu, Mar 8
+
+#### Fri, Mar 9
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week8", TRUE, "Week 8: Mar 12 -- 16",
-""
+"
+#### Spring Break: safe travels!
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week9", TRUE, "Week 9: Mar 19 -- 23",
-""
+"
+
+#### Tue, Mar 20
+
+#### Thu, Mar 22
+
+#### Fri, Mar 23
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week10", TRUE, "Week 10: Mar 26 -- 30",
-""
+"
+
+#### Tue, Mar 27
+
+#### Thu, Mar 29
+
+#### Fri, Mar 30
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week11", TRUE, "Week 11: Apr 2 -- 6",
-""
+"
+
+#### Tue, Apr 3
+
+#### Thu, Apr 5
+
+#### Fri, Apr 6
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week12", TRUE, "Week 12: Apr 9 -- 13",
-""
+"
+
+#### Tue, Apr 10
+
+#### Thu, Apr 12
+
+#### Fri, Apr 13
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week13", TRUE, "Week 13: Apr 16 -- 20",
-""
+"
+
+#### Tue, Apr 17
+
+#### Thu, Apr 19
+
+#### Fri, Apr 20
+"
   )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week14", TRUE, "Week 14: Apr 23 -- 27",
-""
+"
+
+#### Tue, Apr 24
+
+#### Thu, Apr 26
+
+#### Fri, Apr 27
+"
   )
 ```
 
