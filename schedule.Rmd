@@ -39,18 +39,35 @@ contents,
 
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
-"Chapter 1: Observational Units, Categorical and Quantitative Variables
+"
+* Maximum Likelihood Estimation and Bayesian Inference in Analytically Tractable Models
 
 #### Tue, Jan 23
 
  * **In class**, we will work on:
-    * Not yet planned
+    * Introduction to Maximum Likelihood Estimation: hypergeometric distribution and binomial distribution
  * **After class**, please do the following:
-    * Not yet planned
+    * Review material from today's class.  Post on Piazza or visit my office if you have any questions!
+    * Fill in a brief questionnairre.
 
 #### Thu, Jan 25
 
+ * **Before class**, please do the following:
+    * **Reading**
+      * Section 7.1: just skim this section, but do pay attention to Definitions 7.1.1, 7.1.2, 7.1.3, and 7.1.4.
+      * Section 7.5: Pay attention to Definitions 7.5.1 and 7.5.2. Work through one or two of the examples.
+      * Sections 7.2 and 7.3: Read somewhat carefully, but we will cover this in class today.
+ * **In class**, we will work on:
+    * Introduction to Bayesian Estimation: Binomial distribution
+ * **After class**, please do the following:
+    * Review material from today's class.  Post on Piazza or visit my office if you have any questions!
+
 #### Fri, Jan 26
+ * **Before Class**, please do the following:
+    * **Reading**
+      * Finish reading Sections 7.1, 7.2, 7.3, and 7.5 of DeGroot and Schervish
+ * **In Class**, we will work on:
+    * Maximum likelihood and Bayesian Estimation for a univariate normal with known variance
 "
   )
 ```
@@ -58,12 +75,22 @@ make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week2", TRUE, "Week 2: Jan 29 -- Feb 2",
 "
+Bayes Estimates; start on Computational Issues
 
 #### Tue, Jan 30
+ * **Before Class**, please do the following:
+    * **Reading**
+      * Section 7.2 of DeGroot and Schervish
 
 #### Thu, Feb 1
+ * **Before Class**, please do the following:
+    * **Reading**
+      * The first half of Section 7.6 of DeGroot and Schervish: up to, but not including, the subsection called ``M.L.E.'s and Bayes Estimators''; in my copy of the book, this is pages 426 -- 432.
 
 #### Fri, Feb 2
+ * **Before Class**, please do the following:
+    * **Reading**
+      * (Reading assignment not yet determined)
 "
   )
 ```
