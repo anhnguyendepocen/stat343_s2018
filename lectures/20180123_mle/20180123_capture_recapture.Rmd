@@ -90,7 +90,7 @@ Here's what we have so far:
 
 Intuitively, what seems like a good estimator for $N$?  Write this out using the symbols $c$, $n$, and $x$.  Then, plug in the numbers for those quantities that you got above to calculate your estimate.
 
-\vspace{5cm}
+\newpage
 
 ### 5. A second approach to estimation...
 

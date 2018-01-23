@@ -45,20 +45,24 @@ make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
 #### Tue, Jan 23
 
  * **In class**, we will work on:
-    * Introduction to Maximum Likelihood Estimation: hypergeometric distribution and binomial distribution
- * **After class**, please do the following:
-    * Review material from today's class.  Post on Piazza or visit my office if you have any questions!
-    * Fill in a brief questionnairre.
+    * Introduction to Maximum Likelihood Estimation: capture-recapture [pdf](lectures/20180123_mle/20180123_capture_recapture.pdf)
+    * If time: example of Maximum Likelihood Estimation: seedlings [pdf](lectures/20180123_mle/20180123_seedlings.pdf)
+    * Other materials: Summary of common discrete distributions [pdf](lectures/20180123_mle/20180123_discrete_distributions_summary.pdf)
 
 #### Thu, Jan 25
 
  * **Before class**, please do the following:
+    * **Fill out** a brief [questionnairre](https://goo.gl/forms/vIsi277yi74DrswL2)
+    * **Fill out** this poll about when my office hours should be held: [http://whenisgood.net/5h5dzyy](http://whenisgood.net/5h5dzyy)
+    * **Sign up** for our class at gryd.us (the site where we will use R starting Thursday!): [https://beta.gryd.us/course/pASBfTReABjoxzuzQv2g2J/register/](https://beta.gryd.us/course/pASBfTReABjoxzuzQv2g2J/register/)
+    * **Sign up** for our class at Piazza (anonymous question and answer forum): [piazza.com/mtholyoke/spring2018/stat343](piazza.com/mtholyoke/spring2018/stat343)
     * **Reading**
       * Section 7.1: just skim this section, but do pay attention to Definitions 7.1.1, 7.1.2, 7.1.3, and 7.1.4.
       * Section 7.5: Pay attention to Definitions 7.5.1 and 7.5.2. Work through one or two of the examples.
       * Sections 7.2 and 7.3: Read somewhat carefully, but we will cover this in class today.
  * **In class**, we will work on:
-    * Introduction to Bayesian Estimation: Binomial distribution
+    * Finish off any remaining material from Tuesday.
+    * Introduction to Bayesian estimation
  * **After class**, please do the following:
     * Review material from today's class.  Post on Piazza or visit my office if you have any questions!
 
@@ -67,7 +71,7 @@ make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
     * **Reading**
       * Finish reading Sections 7.1, 7.2, 7.3, and 7.5 of DeGroot and Schervish
  * **In Class**, we will work on:
-    * Maximum likelihood and Bayesian Estimation for a univariate normal with known variance
+    * Maximum likelihood and Bayesian Estimation for a univariate normal with known variance?  Depends on how far we got on Thursday.
 "
   )
 ```
