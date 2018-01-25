@@ -46,7 +46,6 @@ make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
 
  * **In class**, we will work on:
     * Introduction to Maximum Likelihood Estimation: capture-recapture [pdf](lectures/20180123_mle/20180123_capture_recapture.pdf)
-    * If time: example of Maximum Likelihood Estimation: seedlings [pdf](lectures/20180123_mle/20180123_seedlings.pdf)
     * Other materials: Summary of common discrete distributions [pdf](lectures/20180123_mle/20180123_discrete_distributions_summary.pdf)
 
 #### Thu, Jan 25
@@ -61,17 +60,20 @@ make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
       * Section 7.5: Pay attention to Definitions 7.5.1 and 7.5.2. Work through one or two of the examples.
       * Sections 7.2 and 7.3: Read somewhat carefully, but we will cover this in class today.
  * **In class**, we will work on:
-    * Finish off any remaining material from Tuesday.
-    * Introduction to Bayesian estimation
+    * Example of Maximum Likelihood Estimation: friend or foe [pdf](lectures/20180125_mle_continued/20180125_mle_friend_or_foe.pdf)
+    * If time: Example of Maximum Likelihood Estimation: seedlings [pdf](lectures/20180123_mle/20180123_seedlings.pdf)
+    * State some definitions related to MLE more carefully: Definitions 7.2.3/7.5.1 (it's the same definition repeated to emphasize its importance), 7.4.1, and 7.5.2.
+    * Introduction to the idea of subjective probabilities
  * **After class**, please do the following:
     * Review material from today's class.  Post on Piazza or visit my office if you have any questions!
+    * If you didn't have time to look at the seedlings example of MLE, I recommend you take a look at it; ask if you have questions!
 
 #### Fri, Jan 26
  * **Before Class**, please do the following:
     * **Reading**
-      * Finish reading Sections 7.1, 7.2, 7.3, and 7.5 of DeGroot and Schervish
+      * Finish a first pass at reading Sections 7.1, 7.2, 7.3, and 7.5 of DeGroot and Schervish
  * **In Class**, we will work on:
-    * Maximum likelihood and Bayesian Estimation for a univariate normal with known variance?  Depends on how far we got on Thursday.
+    * Introduction to Bayesian Estimation
 "
   )
 ```
@@ -84,12 +86,14 @@ Bayes Estimates; start on Computational Issues
 #### Tue, Jan 30
  * **Before Class**, please do the following:
     * **Reading**
-      * Section 7.2 of DeGroot and Schervish
+      * Not yet planned
+ * **In Class**, we will do the following:
+    * Maximum likelihood and Bayesian Estimation for a univariate normal with known variance?
 
 #### Thu, Feb 1
  * **Before Class**, please do the following:
     * **Reading**
-      * The first half of Section 7.6 of DeGroot and Schervish: up to, but not including, the subsection called ``M.L.E.'s and Bayes Estimators''; in my copy of the book, this is pages 426 -- 432.
+      * (Tentative) The first half of Section 7.6 of DeGroot and Schervish: up to, but not including, the subsection called ``M.L.E.'s and Bayes Estimators''; in my copy of the book, this is pages 426 -- 432.
 
 #### Fri, Feb 2
  * **Before Class**, please do the following:
