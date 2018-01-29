@@ -47,7 +47,7 @@ In this lab, we will explore the capture/recapture method in the context of esti
 
 ### 1. Set up
 
-Pour 100 Cheddar goldfish into a ziplock bag.  This represents the population of fish in the pond.  For the rest of this exercise, we're going to pretend that we don't know the total number of fish in the pond and we're going to try to estimate that number.
+I will give you a ziplock bag with a mystery number of goldfish in it.  This represents the population of fish in the pond.  In this exercise, you're going to use the capture/recapture method to develop an estimate of the total number of fish in the pond.
 
 ### 2. Capture (or Mark)
 
