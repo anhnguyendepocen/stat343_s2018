@@ -38,7 +38,7 @@ contents,
 ```
 
 ```{r, echo = FALSE, results='asis'}
-make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
+make_week_box("week1", FALSE, "Week 1: Jan 22 -- 26",
 "
 * Maximum Likelihood Estimation and Bayesian Inference in Analytically Tractable Models
 
@@ -73,7 +73,8 @@ make_week_box("week1", TRUE, "Week 1: Jan 22 -- 26",
     * **Reading**
       * Finish a first pass at reading Sections 7.1, 7.2, 7.3, and 7.5 of DeGroot and Schervish
  * **In Class**, we will work on:
-    * Introduction to Bayesian Estimation
+    * Finish our introduction to maximum likelihood estimation (we will talk about this much more in future weeks)
+    * Introduction to the idea of subjective probability distributions
 "
   )
 ```
@@ -87,15 +88,20 @@ Bayes Estimates; start on Computational Issues
  * **Before Class**, please do the following:
     * **Register for Github** and send me an email with your user id: eray@mtholyoke.edu
     * **Do Beta distribution calibration exercise on Gryd**.  Sign into Gryd.  Click 'My Courses' at the top.  Click `Beta Distribution`.  Work through the exercise.
-    * **Reading**
-      * Not yet planned
  * **In Class**, we will do the following:
-    * Maximum likelihood and Bayesian Estimation for a univariate normal with known variance?
+    * Discuss Bayesian estimation for a Binomial model
+    * Intro to Git and GitHub
+      * Link for today's lab: https://classroom.github.com/a/j23r_ajm
+      * Resource: [Git workflow (pdf)](resources/git_workflow.pdf)
+      * Resource: [Git cheatsheet (pdf)](resources/git-cheat-sheet-education.pdf)
+      * Resource: [Basic commands for Unix navigation (pdf)](resources/unix_navigation.pdf)
+    * Comparison of MLE and Bayesian estimates for a Binomial model: [pdf](lectures/20180130_bayes_binomial/20180130_bayes_binomial.pdf)
 
 #### Thu, Feb 1
  * **Before Class**, please do the following:
-    * **Reading**
-      * (Tentative) The first half of Section 7.6 of DeGroot and Schervish: up to, but not including, the subsection called ``M.L.E.'s and Bayes Estimators''; in my copy of the book, this is pages 426 -- 432.
+    * **Reading** Section 7.4 of DeGroot and Schervish
+ * **In Class**, we will do the following:
+    * Think about estimation for a univariate normal distribution; introduce the idea of loss and Bayes estimates
 
 #### Fri, Feb 2
  * **Before Class**, please do the following:
@@ -110,6 +116,9 @@ make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
 "
 
 #### Tue, Feb 6
+ * **Before Class**, please do the following:
+    * **Reading**
+      * The first half of Section 7.6 of DeGroot and Schervish: up to, but not including, the subsection called ``M.L.E.'s and Bayes Estimators''; in my copy of the book, this is pages 426 -- 432.
 
 #### Thu, Feb 8
 
