@@ -99,14 +99,16 @@ Bayes Estimates; start on Computational Issues
 
 #### Thu, Feb 1
  * **Before Class**, please do the following:
-    * **Reading** Section 7.4 of DeGroot and Schervish
+    * Have a good morning!
  * **In Class**, we will do the following:
-    * Think about estimation for a univariate normal distribution; introduce the idea of loss and Bayes estimates
+    * Lab about inference for a binomial.
+    * More about Git.
 
 #### Fri, Feb 2
  * **Before Class**, please do the following:
-    * **Reading**
-      * (Reading assignment not yet determined)
+    * **Reading** Section 7.4 of DeGroot and Schervish
+ * **In Class**, we will do the following:
+    * Think about estimation for a univariate normal distribution; introduce the idea of loss and Bayes estimates
 "
   )
 ```
