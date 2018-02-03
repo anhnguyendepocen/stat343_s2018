@@ -108,7 +108,8 @@ Bayes Estimates; start on Computational Issues
  * **Before Class**, please do the following:
     * **Reading** Section 7.4 of DeGroot and Schervish
  * **In Class**, we will do the following:
-    * Think about estimation for a univariate normal distribution; introduce the idea of loss and Bayes estimates
+    * Wrap up comparison of MLE and Bayesian inference for a binomial
+    * More about Git.
 "
   )
 ```
