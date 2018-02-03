@@ -92,7 +92,7 @@ Bayes Estimates; start on Computational Issues
     * Discuss Bayesian estimation for a Binomial model
     * Intro to Git and GitHub
       * Link for today's lab: https://classroom.github.com/a/j23r_ajm
-      * Resource: [Git workflow (pdf)](resources/git_workflow.pdf)
+      * Resource: [Git workflow (pdf)](resources/git_workflow/git_workflow.pdf)
       * Resource: [Git cheatsheet (pdf)](resources/git-cheat-sheet-education.pdf)
       * Resource: [Basic commands for Unix navigation (pdf)](resources/unix_navigation.pdf)
     * Comparison of MLE and Bayesian estimates for a Binomial model: [pdf](lectures/20180130_bayes_binomial/20180130_bayes_binomial.pdf)
@@ -119,8 +119,11 @@ make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
 
 #### Tue, Feb 6
  * **Before Class**, please do the following:
-    * **Reading**
-      * The first half of Section 7.6 of DeGroot and Schervish: up to, but not including, the subsection called ``M.L.E.'s and Bayes Estimators''; in my copy of the book, this is pages 426 -- 432.
+    * If you were unable to get the first lab committed to github, take another look at that over the weekend (but don't spend too much time on this).  If you're still stuck on Monday, let me know and we can work through it together.
+    * Try cloning the first problem set (PS1) from GitHub to Gryd.  The link to the assignment on GitHub is on the homework page.
+    * Start on PS1.
+ * **In Class**, we will do the following:
+    * Start thinking about sampling distributions.
 
 #### Thu, Feb 8
 
