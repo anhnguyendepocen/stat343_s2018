@@ -80,7 +80,7 @@ make_week_box("week1", FALSE, "Week 1: Jan 22 -- 26",
 ```
 
 ```{r, echo = FALSE, results='asis'}
-make_week_box("week2", TRUE, "Week 2: Jan 29 -- Feb 2",
+make_week_box("week2", FALSE, "Week 2: Jan 29 -- Feb 2",
 "
 Bayes Estimates; start on Computational Issues
 
