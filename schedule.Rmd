@@ -124,11 +124,14 @@ make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
     * Try cloning the first problem set (PS1) from GitHub to Gryd.  The link to the assignment on GitHub is on the homework page.
     * Start on PS1.
  * **In Class**, we will do the following:
-    * Start thinking about sampling distributions.
+    * Start thinking about sampling distributions; central limit theorem.  Ideas from Sections 6.3 and 8.1 of the book.
+    * Overview of ggplot2: [pdf](lectures/20180206_ggplot2/20180202_visualization.pdf)
 
 #### Thu, Feb 8
 
 #### Fri, Feb 9
+ * **Before Class**, please do the following:
+    * **PS1** is due today!
 "
   )
 ```
