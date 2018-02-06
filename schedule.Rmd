@@ -61,7 +61,7 @@ make_week_box("week1", FALSE, "Week 1: Jan 22 -- 26",
       * Sections 7.2 and 7.3: Read somewhat carefully, but we will cover this in class today.
  * **In class**, we will work on:
     * Example of Maximum Likelihood Estimation: friend or foe [pdf](lectures/20180125_mle_continued/20180125_mle_friend_or_foe.pdf)
-    * If time: Example of Maximum Likelihood Estimation: seedlings [pdf](lectures/20180123_mle/20180123_seedlings.pdf)
+    * If time: Example of Maximum Likelihood Estimation: seedlings [pdf](lectures/20180123_mle/20180123_seedlings.pdf)  Solutions: [pdf](lectures/20180123_mle/20180123_seedlings_sol.pdf)
     * State some definitions related to MLE more carefully: Definitions 7.2.3/7.5.1 (it's the same definition repeated to emphasize its importance), 7.4.1, and 7.5.2.
     * Introduction to the idea of subjective probabilities
  * **After class**, please do the following:
@@ -130,8 +130,6 @@ make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
 #### Thu, Feb 8
 
 #### Fri, Feb 9
- * **Before Class**, please do the following:
-    * **PS1** is due today!
 "
   )
 ```
@@ -141,6 +139,9 @@ make_week_box("week4", TRUE, "Week 4: Feb 12 -- 16",
 "
 
 #### Tue, Feb 13
+ * **Before Class**, please do the following:
+    * **PS1** is due today!
+    * **PS2** is due today!
 
 #### Thu, Feb 15
 
