@@ -6,3 +6,5 @@ title: "Resources"
     * Resource: [Git workflow (pdf)](resources/git_workflow/git_workflow.pdf)
     * Resource: [Git cheatsheet (pdf)](resources/git-cheat-sheet-education.pdf)
     * Resource: [Unix navigation (pdf)](resources/unix_navigation.pdf)
+ * Calculus and Probability
+    * Resource: [Summary of Results from Calculus and Probability (pdf)](resources/calculus/calculus_probability.pdf)
