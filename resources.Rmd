@@ -3,8 +3,13 @@ title: "Resources"
 ---
 
  * Git
-    * Resource: [Git workflow (pdf)](resources/git_workflow/git_workflow.pdf)
-    * Resource: [Git cheatsheet (pdf)](resources/git-cheat-sheet-education.pdf)
-    * Resource: [Unix navigation (pdf)](resources/unix_navigation.pdf)
+    * [Git workflow (pdf)](resources/git_workflow/git_workflow.pdf)
+    * [Git cheatsheet (pdf)](resources/git-cheat-sheet-education.pdf)
+    * [Unix navigation (pdf)](resources/unix_navigation.pdf)
  * Calculus and Probability
-    * Resource: [Summary of Results from Calculus and Probability (pdf)](resources/calculus/calculus_probability.pdf)
+    * [Summary of Results from Calculus and Probability (pdf)](resources/calculus/calculus_probability.pdf)
+ * R
+    * [dplyr cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
+    * [Summary of some R commands, focusing on the dplyr package (pdf)](resources/R/r_overview.pdf)
+    * [ggplot2 cheatsheet (pdf)](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+    * [Overview of ggplot2](resources/R/ggplot2_overview.pdf)
