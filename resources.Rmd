@@ -2,6 +2,9 @@
 title: "Resources"
 ---
 
+ * Readings
+    * [Rice: section on maximum likelihood](resources/readings/rice_max_lik.pdf)
+    * [Rice: section on Bayesian inference](resources/readings/rice_bayes.pdf)
  * Git
     * [Git workflow (pdf)](resources/git_workflow/git_workflow.pdf)
     * [Git cheatsheet (pdf)](resources/git-cheat-sheet-education.pdf)
