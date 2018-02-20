@@ -115,7 +115,7 @@ Bayes Estimates; start on Computational Issues
 ```
 
 ```{r, echo = FALSE, results='asis'}
-make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
+make_week_box("week3", FALSE, "Week 3: Feb 5 -- 9",
 "
 
 #### Tue, Feb 6
@@ -128,8 +128,12 @@ make_week_box("week3", TRUE, "Week 3: Feb 5 -- 9",
     * Overview of ggplot2: [pdf](lectures/20180206_ggplot2/20180202_visualization.pdf)
 
 #### Thu, Feb 8
+ * **In class**, we will do the following:
+    * Start a lab about the central limit theorem; Solutions posted on Thursday, Feb. 15.
 
 #### Fri, Feb 9
+ * **In class**, we will do the following:
+    * Maximum likelihood estimation for the parameters of a univariate normal distribution
 "
   )
 ```
@@ -140,12 +144,24 @@ make_week_box("week4", TRUE, "Week 4: Feb 12 -- 16",
 
 #### Tue, Feb 13
  * **Before Class**, please do the following:
-    * **PS1** is due today!
     * **PS2** is due today!
+ * **In class**, we will do the following:
+    * Start Bayesian estimation for the mean of a univariate normal distribution, assuming the variance is known
 
 #### Thu, Feb 15
+ * **Before Class**, please do the following:
+    * **PS1** is due today!
+ * **In class**, we will do the following:
+    * Wrap up Bayesian estimation for the mean of a univariate normal distribution, assuming the variance is known
+    * Wrap up Central Limit Theorem lab we started on Feb 8.
+        * [Solutions on GitHub](https://github.com/mhc-stat343-s2018/lab-clt-solutions) - you could clone from here
+        * [Notebook viewer](http://nbviewer.jupyter.org/urls/cdn.rawgit.com/mhc-stat343-s2018/lab-clt-solutions/b82c7724/lab_clt.ipynb) - to just look at what I wrote up
 
 #### Fri, Feb 16
+ * **In class**, we will do the following:
+    * Start on normal approximation to the sampling distribution of the MLE.
+        * [Example from class on GitHub](https://github.com/mhc-stat343-s2018/lecture-mle-sampling-dist-normal-approx) - you could clone from here
+        * [Notebook viewer](http://nbviewer.jupyter.org/urls/cdn.rawgit.com/mhc-stat343-s2018/lecture-mle-sampling-dist-normal-approx/dae64168/exponential_loglik_plots.ipynb) - to just look at example from class
 "
   )
 ```
@@ -153,8 +169,10 @@ make_week_box("week4", TRUE, "Week 4: Feb 12 -- 16",
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week5", TRUE, "Week 5: Feb 19 -- 23",
 "
-
 #### Tue, Feb 20
+ * **In class**, we will do the following:
+    * Discuss Bias, Variance, and Mean Squared Error (MSE) of estimators.  In Schervish, this is covered in Section 8.7, and the first couple of pages of Section 7.9.  In Rice, this is not covered particularly systematically anywhere; the closest we can get is in Section 7.3.1 and Section 4.2.1.
+    * Start a lab using these ideas; you have been added as a collaborator on a GitHub repository.
 
 #### Thu, Feb 22
 
@@ -170,6 +188,8 @@ make_week_box("week6", TRUE, "Week 6: Feb 26 -- Mar 2",
 #### Tue, Feb 27
 
 #### Thu, Mar 1
+ * **Before Class**, please do the following:
+    * **PS2** is due today!
 
 #### Fri, Mar 2
 "
@@ -179,6 +199,7 @@ make_week_box("week6", TRUE, "Week 6: Feb 26 -- Mar 2",
 ```{r, echo = FALSE, results='asis'}
 make_week_box("week7", TRUE, "Week 7: Mar 5 -- 9",
 "
+**Midterm 1; covers material from PS1 and PS2**
 
 #### Tue, Mar 6
 

@@ -13,7 +13,7 @@ library(tidyverse)
 #' @return a data frame with two columns: N is a possible value for the
 #'   the population size and lik is the likelihood
 calc_capture_lik <- function(group_id, c, n, x, max_N = 500) {
-  N <- seq(from = 0, to = max_N)
+  N <- seq(from = c+n-x, to = max_N)
   return(
     data.frame(
       N = N,
@@ -24,8 +24,17 @@ calc_capture_lik <- function(group_id, c, n, x, max_N = 500) {
 }
 
 # Read in class results and calculate likelihood at a grid of values for N
-results <- read_csv("http://www.evanlray.com/stat343_s2018/lectures/20180123/capture_recapture_results.csv")
+results <- read_csv("http://www.evanlray.com/stat343_s2018/lectures/20180123_mle/capture_recapture_results.csv")
 
-lik_combined <- map(results, calc_capture_lik)
+# Call the calc_capture_lik function once for each row in the results data frame
+lik_combined <- pmap_dfr(results, calc_capture_lik)
+
+# Get the maximum likelihood value for each group
+max_lik_by_group <- lik_combined %>%
+  group_by(group_id) %>%
+  top_n(1, lik)
 
 #Plot likelihood functions for each group and draw vertical line at maximum of each likelihood function
+ggplot() +
+  geom_line(mapping = aes(x = N, y = lik, color = group_id), data = lik_combined) +
+  geom_vline(mapping = aes(xintercept = N, color = group_id), data = max_lik_by_group)

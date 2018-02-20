@@ -18,6 +18,11 @@ si_res <- si_res %>%
 
 si_res$c50[is.na(si_res$c50)] <- FALSE
 si_res$c90[is.na(si_res$c90)] <- FALSE
+si_res <- si_res %>%
+  mutate(
+    m_50 = (lb_50 + ub_50)/2,
+    m_90 = (lb_90 + ub_90)/2,
+  )
 
 si_res %>%
   group_by(Name) %>%
@@ -28,4 +33,8 @@ si_res %>%
     total_dist = (.5 - prop_correct_50) + (.9 - prop_correct_90)
   )
 
-
+ggplot(data = si_res %>% filter(Q_num %in% 6:10)) +
+  geom_errorbarh(mapping = aes(x = m_90, xmin = lb_90, xmax = ub_90, y = Name, color = c90)) +
+  geom_errorbarh(mapping = aes(x = m_50, xmin = lb_50, xmax = ub_50, y = Name, color = c50)) +
+  geom_vline(mapping = aes(xintercept = answer)) +
+  facet_wrap( ~ Q_num, scales = "free")

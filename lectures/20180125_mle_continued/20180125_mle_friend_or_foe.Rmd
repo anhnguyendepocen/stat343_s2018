@@ -1,5 +1,5 @@
 ---
-title: "20180123 - Friend or Foe"
+title: "20180125 - Friend or Foe"
 author: "Evan L. Ray, adapted from Allan Rossman and Beth Chance"
 date: "Janary 25, 2018"
 output:
