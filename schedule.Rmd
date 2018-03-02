@@ -176,8 +176,10 @@ make_week_box("week5", TRUE, "Week 5: Feb 19 -- 23",
     * Start a lab using these ideas; you have been added as a collaborator on a GitHub repository.
 
 #### Thu, Feb 22
+ * Continue lab
 
 #### Fri, Feb 23
+ * Finish lab
 "
   )
 ```
@@ -187,12 +189,16 @@ make_week_box("week6", TRUE, "Week 6: Feb 26 -- Mar 2",
 "
 
 #### Tue, Feb 27
+ * Newton's Method and Optimization
 
 #### Thu, Mar 1
- * **Before Class**, please do the following:
-    * **PS2** is due today!
+ * Newton's Method and Optimization
+    * Walk through code: [pdf](lectures/20180301_optimization_notes/20180301_optimization_notes.pdf)
+    * Lab on Gryd; fitting a Weibull
 
 #### Fri, Mar 2
+ * Newton's Method and Optimization
+    * Recap: slides [pdf](lectures/20180302_optimization_notes_2/20180302_NR_slides.pdf)
 "
   )
 ```
@@ -203,6 +209,8 @@ make_week_box("week7", TRUE, "Week 7: Mar 5 -- 9",
 **Midterm 1; covers material from PS1 and PS2**
 
 #### Tue, Mar 6
+ * **Before Class**, please do the following:
+    * **PS2** is due today!
 
 #### Thu, Mar 8
 
