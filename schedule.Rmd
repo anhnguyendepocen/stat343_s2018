@@ -139,7 +139,7 @@ make_week_box("week3", FALSE, "Week 3: Feb 5 -- 9",
 ```
 
 ```{r, echo = FALSE, results='asis'}
-make_week_box("week4", TRUE, "Week 4: Feb 12 -- 16",
+make_week_box("week4", FALSE, "Week 4: Feb 12 -- 16",
 "
 
 #### Tue, Feb 13
@@ -167,7 +167,7 @@ make_week_box("week4", TRUE, "Week 4: Feb 12 -- 16",
 ```
 
 ```{r, echo = FALSE, results='asis'}
-make_week_box("week5", TRUE, "Week 5: Feb 19 -- 23",
+make_week_box("week5", FALSE, "Week 5: Feb 19 -- 23",
 "
 #### Tue, Feb 20
  * **In class**, we will do the following:
@@ -185,7 +185,7 @@ make_week_box("week5", TRUE, "Week 5: Feb 19 -- 23",
 ```
 
 ```{r, echo = FALSE, results='asis'}
-make_week_box("week6", TRUE, "Week 6: Feb 26 -- Mar 2",
+make_week_box("week6", FALSE, "Week 6: Feb 26 -- Mar 2",
 "
 
 #### Tue, Feb 27
@@ -207,6 +207,10 @@ make_week_box("week6", TRUE, "Week 6: Feb 26 -- Mar 2",
 make_week_box("week7", TRUE, "Week 7: Mar 5 -- 9",
 "
 **Midterm 1; covers material from PS1 and PS2**
+
+ * **Readings for the next couple of weeks**:
+    * The Law of Large Numbers and Monte Carlo Integration: Section 5.2 of Rice has a good introduction to the ideas; see Theorem A and Example A [here](resources/readings/rice_mc_integration.pdf).  Related material is also in Section 6.2 in DeGroot and Schervish, especially Theorems 6.2.4 through 6.2.6.
+    * Sections about Bayesian Inference and MCMC from \"Introduction to Statistical Thought\" by Lavine: [pdf](resources/readings/lavine_bayes_mcmc.pdf).  The models used in that text are more complicated than the models we're using in the class at this point, but this is the best introductory discussion of MCMC I could find.  In case you're interested, the full text is available [here](http://people.math.umass.edu/~lavine/Book/book.html).
 
 #### Tue, Mar 6
  * **Before Class**, please do the following:
