@@ -215,6 +215,10 @@ make_week_box("week7", TRUE, "Week 7: Mar 5 -- 9",
 #### Tue, Mar 6
  * **Before Class**, please do the following:
     * **PS2** is due today!
+ * **In Class**, we will do the following:
+    * Introduction to Monte Carlo methods for Bayesian inference: [pdf](lectures/20180306_mcmc/20180306_mcmc.pdf)
+    * Watch this video: https://www.youtube.com/watch?v=OTO1DygELpY
+    * Start a lab about these ideas; you have been added as a collaborator on a repository called `lab-intro-mcmc-yourname` on GitHub
 
 #### Thu, Mar 8
 
