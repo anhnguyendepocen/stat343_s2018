@@ -240,10 +240,19 @@ make_week_box("week9", TRUE, "Week 9: Mar 19 -- 23",
 "
 
 #### Tue, Mar 20
+ * **In Class**, we will do the following:
+    * Attempt to install Jupyter on peoples' laptops.... :(
 
 #### Thu, Mar 22
+ * **In Class**, we will do the following:
+    * Talk about frequentist confidence intervals based on the large-sample normal approximation to the sampling distribution of the maximum likelihood estimator.  [pdf](lectures/20180322_large_sample_ci/20180322_large_sample_ci.pdf)
+    * This is in Section 8.5 of Rice, see Examples B and C and the discussion immediately preceeding them
 
 #### Fri, Mar 23
+ * **In Class**, we will do the following:
+    * Continuing from last time, talk about Bayesian credible intervals based on the large-sample normal approximation to the posterior distribution.
+    * A quick look at Bayesian interval estimation via MCMC.  Lab posted on GitHub, called lab-stan-poisson.
+    * This is not really discussed in our books, unfortunately.  A similar idea is discussed in Rice Section 8.6, but the intervals are obtained in a setting where a conjugate prior is used, not when large-sample approximations or MCMC methods must be used - see Example A on pages 288 through 290.  Examples B and C also present Bayesian credible intervals with less discussion.  The section of \"Introduction to Statistical Thought\" by Michael Lavine posted on the resources page of the course website does discuss interval estimation via MCMC as well.
 "
   )
 ```
@@ -253,8 +262,12 @@ make_week_box("week10", TRUE, "Week 10: Mar 26 -- 30",
 "
 
 #### Tue, Mar 27
+ * **In Class**, we will do the following:
+    * No new material.
+    * Time to practice the mechanics of interval estimation using the three approaches discussed so far: large-sample frequentist confidence intervals, large-sample Bayesian credible intervals, and Bayesian credible intervals via MCMC.
 
 #### Thu, Mar 29
+
 
 #### Fri, Mar 30
 "
