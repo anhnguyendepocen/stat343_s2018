@@ -267,6 +267,8 @@ make_week_box("week10", TRUE, "Week 10: Mar 26 -- 30",
     * Time to practice the mechanics of interval estimation using the three approaches discussed so far: large-sample frequentist confidence intervals, large-sample Bayesian credible intervals, and Bayesian credible intervals via MCMC.
 
 #### Thu, Mar 29
+ * **In Class**, we will do the following:
+    * Start thinking about bootstrap confidence intervals.
 
 
 #### Fri, Mar 30
