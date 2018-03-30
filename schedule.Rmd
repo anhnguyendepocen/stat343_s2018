@@ -269,9 +269,13 @@ make_week_box("week10", TRUE, "Week 10: Mar 26 -- 30",
 #### Thu, Mar 29
  * **In Class**, we will do the following:
     * Start thinking about bootstrap confidence intervals.
-
+    * Example: [pdf](lectures/20180329_bootstrap/20180329_bootstrap.pdf)
+    * Suggested readings posted on Resources page.
 
 #### Fri, Mar 30
+ * **In Class**, we will do the following:
+    * Finish off introduction to bootstrap confidence intervals [pdf](lectures/20180330_bootstrap/20180330_bootstrap.pdf)
+    * Start lab-percentile-bootstrap on GitHub
 "
   )
 ```

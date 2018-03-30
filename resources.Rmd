@@ -5,6 +5,8 @@ title: "Resources"
  * Readings
     * [Rice: section on maximum likelihood](resources/readings/rice_max_lik.pdf)
     * [Rice: section on Bayesian inference](resources/readings/rice_bayes.pdf)
+    * [Chiara and Hesterberg: Chapter about bootstrap](resources/readings/chihara_hesterberg_bootstrap/chihara_hesterberg_bootstrap.pdf) - this is the best undergraduate-level introduction to the bootstrap, but doesn't really make any attempt to explain why it works
+    * [Efron and Tibshirani: Chapter about bootstrap percentile intervals (on Google books)](https://books.google.com/books?id=gLlpIUxRntoC&lpg=PP1&pg=PA168#v=onepage&q&f=false) - Chapter 13 of this book about the bootstrap goes through the motivation for the bootstrap percentile confidence interval.  It motivates the bootstrap percentile confidence interval from the same perspective we used in class.
  * Git
     * [Git workflow (pdf)](resources/git_workflow/git_workflow.pdf)
     * [Git cheatsheet (pdf)](resources/git-cheat-sheet-education.pdf)
