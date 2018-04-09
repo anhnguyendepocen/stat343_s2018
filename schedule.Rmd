@@ -285,10 +285,18 @@ make_week_box("week11", TRUE, "Week 11: Apr 2 -- 6",
 "
 
 #### Tue, Apr 3
+ * **In Class**, we will do the following:
+    * Introduce bootstrap $t$ confidence intervals [pdf](lectures/20180403_bootstrap_t/20180403_bootstrap_t.pdf)
+    * Time to finish lab-percentile-bootstrap.
+    * If lab-percentile-bootstrap is done, time to start ps5.
 
 #### Thu, Apr 5
+ * **In Class**, we will do the following:
+    * Work on old labs, start problem set 5
 
 #### Fri, Apr 6
+ * **In Class**, we will do the following:
+    * Work on old labs, start problem set 5
 "
   )
 ```
