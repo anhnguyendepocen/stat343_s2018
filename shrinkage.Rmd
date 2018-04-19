@@ -1,0 +1,261 @@
+---
+title: "Shrinkage"
+---
+
+
+# Shrinkage
+
+Suppose we observe $$X_1, \ldots, X_n \sim \text{Normal}\left(\begin{bmatrix} 2 \\ 3 \\ 5 \end{bmatrix}, \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix}\right)$$
+
+For simplicity, suppose the covariance matrix is known but the mean vector $\mu = (2, 3, 5)'$ is unknown; we want to estimate this parameter.
+
+Here are three estimators we might choose from:
+
+### Bayesian, Normal Prior
+
+If we use a prior of
+
+$$\mu \sim \text{Normal}\left(\gamma_0, \Lambda_0\right),$$
+
+then the posterior distribution for $\mu$ is 
+
+$$\mu | x_1, \ldots, x_n, \gamma_0, \Lambda_0 \sim \text{Normal}\left((\Lambda_0^{-1} + n \Sigma^{-1})^{-1}(\Lambda_0^{-1} \gamma_0 + n \Sigma^{-1} \bar{x}), (\Lambda_0^{-1} + n \Sigma^{-1})^{-1} \right)$$
+
+What is this posterior doing?
+
+Suppose we use a prior mean of $\gamma_0 = (0, 0, 0)'$ and a prior covariance of $0.1 \mathbb{I}$.  As the sample size $n$ increases, the posterior mean moves towards the sample mean.  For illustration, let's see what happens if we imagine holding the sample mean fixed at $(2.1, 2.8, 4.7)'$ while increasing the sample size (so imagine taking larger sample sizes, but we happen to always get the same sample mean).
+
+In the plot below, the blue point is at the mean of the prior distribution for $\mu$, the red point is at the sample mean, and the black point is at the mean of the posterior distribution for $\mu$.  The slider controls the sample size $n$.
+
+```{r, echo = FALSE, message = FALSE}
+library(rgl)
+library(mvtnorm)
+library(plyr)
+library(dplyr)
+library(ggplot2)
+
+
+gamma <- rep(0, 3)
+Lambda <- diag(0.1, nrow = 3)
+
+x_bar <- c(2.1, 2.8, 4.7)
+Sigma <- diag(1, nrow = 3)
+
+n <- 0:1000
+
+calc_posterior_mean <- function(n, gamma, Lambda, x_bar, Sigma) {
+  return(solve(solve(Lambda) + n * solve(Sigma)) %*% (solve(Lambda) %*% gamma + n * solve(Sigma) %*% x_bar))
+}
+
+xyz <- data.frame(
+  x = rep(NA, length(n)),
+  y = rep(NA, length(n)),
+  z = rep(NA, length(n))
+)
+
+for(i in seq_along(n)) {
+  xyz[i, ] <- calc_posterior_mean(n[i], gamma = gamma, Lambda = Lambda, x_bar = x_bar, Sigma = Sigma)
+}
+
+#lineid <- plot3d(xyz, type="l", col = "black")["data"]
+junk <- open3d()
+#plot3d(X1, X2, xlim=c(-1, 5), ylim=c(-1, 5), zlim=c(-1, 5), zlab="f(x1, x2)", xlab = "x1", ylab = "x2", mouseMode = "zAxis", type = "s")
+
+spheregammaid <- spheres3d(gamma, radius = 0.2, col = "blue")
+spherexbarid <- spheres3d(x_bar, radius = 0.2, col = "red")
+sphereptestid <- spheres3d(xyz[1, , drop=FALSE], radius = 0.2, col = "black")
+
+decorate3d(xlim=c(0, 5), ylim=c(0, 5), zlim=c(0, 5), zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+
+rglwidget() %>%
+playwidget(list(
+  ageControl(births = 0, ages = n,
+        vertices = xyz, objids = sphereptestid)),
+  start = 0, stop = max(n), rate = 50,
+  components = c("Slider", "Reverse", "Play", "Label"),
+  loop = FALSE)
+```
+
+
+### James-Stein
+
+The James-Stein Estimator is
+
+$\hat{\mu} = \left(1 - \frac{\sigma}{n\sum_{j = 1}^n\bar{x}_j^2} \right)\bar{x}$
+
+```{r, echo = FALSE, message = FALSE}
+library(rgl)
+library(mvtnorm)
+library(plyr)
+library(dplyr)
+library(ggplot2)
+
+
+gamma <- rep(0, 3)
+Lambda <- diag(0.1, nrow = 3)
+
+x_bar <- c(2.1, 2.8, 4.7)
+Sigma <- diag(1, nrow = 3)
+
+n <- 1:1000
+
+xyz <- data.frame(
+  x = rep(NA, length(n)),
+  y = rep(NA, length(n)),
+  z = rep(NA, length(n))
+)
+
+for(i in seq_along(n)) {
+  xyz[i, ] <- (1 - 1/(n[i] * sum(x_bar^2))) * x_bar
+}
+
+#lineid <- plot3d(xyz, type="l", col = "black")["data"]
+junk <- open3d()
+#plot3d(X1, X2, xlim=c(-1, 5), ylim=c(-1, 5), zlim=c(-1, 5), zlab="f(x1, x2)", xlab = "x1", ylab = "x2", mouseMode = "zAxis", type = "s")
+
+#spheregammaid <- spheres3d(gamma, radius = 0.2, col = "blue")
+spherexbarid <- spheres3d(x_bar, radius = 0.2, col = "red")
+sphereptestid <- spheres3d(xyz[1, , drop=FALSE], radius = 0.2, col = "black")
+
+decorate3d(xlim=c(0, 5), ylim=c(0, 5), zlim=c(0, 5), zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+
+rglwidget() %>%
+playwidget(list(
+  ageControl(births = 0, ages = n,
+        vertices = xyz, objids = sphereptestid)),
+  start = 0, stop = max(n), rate = 50,
+  components = c("Slider", "Reverse", "Play", "Label"),
+  loop = FALSE)
+```
+
+
+## Effect of Shrinkage
+
+### Bayes, Prior Mean 0
+
+```{r, echo = FALSE, warning=FALSE}
+rgl.viewpoint(userMatrix = matrix(c(0.921660840511322, 0.0465770699083805, -0.385190784931183, 0, -0.387880355119705, 0.0862834379076958, -0.917662262916565, 0, -0.00950636342167854, 0.995181322097778, 0.0975903198122978, 0, 0, 0, 0, 1), nrow = 4))
+
+eo <- ellipse3d(x = diag(0.25, nrow = 3), scale = rep(1, 3), centre = c(2, 3, 5), t = 2, subdivide = 5)
+
+edef <- eo
+dist_diff <- rep(NA, ncol(edef$vb))
+dist_diff_to_plot <- rep(NA, ncol(edef$ib))
+for(j in seq_len(ncol(edef$vb))) {
+  edef$vb[1:3, j] <- calc_posterior_mean(n = 10, gamma = rep(0, 3), Lambda = diag(10, nrow = 3), x_bar = edef$vb[1:3, j], Sigma = diag(0.25, 3))
+  dist_diff[j] <- sum((edef$vb[1:3, j] - c(2, 3, 5))^2) - sum((eo$vb[1:3, j] - c(2, 3, 5))^2)
+}
+
+for(j in seq_len(ncol(edef$ib))) {
+  dist_diff_to_plot[j] <- mean(dist_diff[edef$ib[, j]])
+}
+
+edef$material$color <- rep(c("blue", "red")[(dist_diff_to_plot > 0) + 1], each = 4)
+
+junk <- open3d()
+plot3d(eo, alpha = 0.2, type = "wire", xlab = "", ylab = "", zlab = "")
+shade3d(edef, alpha = 0.8, add = TRUE)
+decorate3d(xlim=c(0, 6), ylim=c(0, 6), zlim=c(0, 6), zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+rglwidget()
+```
+
+
+```{r, echo = FALSE, warning=FALSE}
+junk <- open3d()
+plot3d(eo, alpha = 0.2, type = "wire", xlab = "", ylab = "", zlab = "")
+shade3d(edef, alpha = 0.8, add = TRUE)
+decorate3d(zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+rglwidget()
+```
+
+The proportion of the surface of the sphere that moves closer to the center after shrinkage is approximately... 
+
+```{r, echo = TRUE}
+mean(dist_diff_to_plot < 0)
+```
+
+### Bayes, Prior Mean (2, 3, 5)
+
+```{r, echo = FALSE, warning=FALSE}
+rgl.viewpoint(userMatrix = matrix(c(0.921660840511322, 0.0465770699083805, -0.385190784931183, 0, -0.387880355119705, 0.0862834379076958, -0.917662262916565, 0, -0.00950636342167854, 0.995181322097778, 0.0975903198122978, 0, 0, 0, 0, 1), nrow = 4))
+
+eo <- ellipse3d(x = diag(0.25, nrow = 3), scale = rep(1, 3), centre = c(2, 3, 5), t = 2, subdivide = 5)
+
+edef <- eo
+dist_diff <- rep(NA, ncol(edef$vb))
+dist_diff_to_plot <- rep(NA, ncol(edef$ib))
+for(j in seq_len(ncol(edef$vb))) {
+  edef$vb[1:3, j] <- calc_posterior_mean(n = 10, gamma = c(2, 3, 5), Lambda = diag(10, nrow = 3), x_bar = edef$vb[1:3, j], Sigma = diag(0.25, 3))
+  dist_diff[j] <- sum((edef$vb[1:3, j] - c(2, 3, 5))^2) - sum((eo$vb[1:3, j] - c(2, 3, 5))^2)
+}
+
+for(j in seq_len(ncol(edef$ib))) {
+  dist_diff_to_plot[j] <- mean(dist_diff[edef$ib[, j]])
+}
+
+edef$material$color <- rep(c("blue", "red")[(dist_diff_to_plot > 0) + 1], each = 4)
+
+junk <- open3d()
+plot3d(eo, alpha = 0.2, type = "wire", xlab = "", ylab = "", zlab = "")
+shade3d(edef, alpha = 0.8, add = TRUE)
+decorate3d(xlim=c(0, 6), ylim=c(0, 6), zlim=c(0, 6), zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+rglwidget()
+```
+
+```{r, echo = FALSE, warning=FALSE}
+junk <- open3d()
+plot3d(eo, alpha = 0.2, type = "wire", xlab = "", ylab = "", zlab = "")
+shade3d(edef, alpha = 0.8, add = TRUE)
+decorate3d(zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+rglwidget()
+```
+
+The proportion of the surface of the sphere that moves closer to the center after shrinkage is approximately... 
+
+```{r, echo = TRUE}
+mean(dist_diff_to_plot < 0)
+```
+
+
+### James-Stein
+
+```{r, echo = FALSE, warning=FALSE}
+rgl.viewpoint(userMatrix = matrix(c(0.921660840511322, 0.0465770699083805, -0.385190784931183, 0, -0.387880355119705, 0.0862834379076958, -0.917662262916565, 0, -0.00950636342167854, 0.995181322097778, 0.0975903198122978, 0, 0, 0, 0, 1), nrow = 4))
+
+eo <- ellipse3d(x = diag(0.25, nrow = 3), scale = rep(1, 3), centre = c(2, 3, 5), t = 2, subdivide = 5)
+
+edef <- eo
+dist_diff <- rep(NA, ncol(edef$vb))
+dist_diff_to_plot <- rep(NA, ncol(edef$ib))
+for(j in seq_len(ncol(edef$vb))) {
+  edef$vb[1:3, j] <- (1 - 1 / sum((edef$vb[1:3, j])^2)) * edef$vb[1:3, j]
+  dist_diff[j] <- sum((edef$vb[1:3, j] - c(2, 3, 5))^2) - sum((eo$vb[1:3, j] - c(2, 3, 5))^2)
+}
+
+for(j in seq_len(ncol(edef$ib))) {
+  dist_diff_to_plot[j] <- mean(dist_diff[edef$ib[, j]])
+}
+
+edef$material$color <- rep(c("blue", "red")[(dist_diff_to_plot > 0) + 1], each = 4)
+
+junk <- open3d(xlim=c(0, 6), ylim=c(0, 6), zlim=c(0, 6), zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+plot3d(eo, alpha = 0.2, type = "wire", xlab = "", ylab = "", zlab = "")
+shade3d(edef, alpha = 0.8, add = TRUE)
+decorate3d(xlim=c(0, 6), ylim=c(0, 6), zlim=c(0, 6), zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+rglwidget()
+```
+
+```{r, echo = FALSE, warning=FALSE}
+junk <- open3d(xlim=c(0, 6), ylim=c(0, 6), zlim=c(0, 6), zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+plot3d(eo, alpha = 0.2, type = "wire", xlab = "", ylab = "", zlab = "")
+shade3d(edef, alpha = 0.8, add = TRUE)
+decorate3d(zlab="f(x1, x2)", xlab = "x1", ylab = "x2")
+rglwidget()
+```
+
+The proportion of the surface of the sphere that moves closer to the center after shrinkage is approximately... 
+
+```{r, echo = TRUE}
+mean(dist_diff_to_plot < 0)
+```
+
