@@ -306,10 +306,16 @@ make_week_box("week12", TRUE, "Week 12: Apr 9 -- 13",
 "
 
 #### Tue, Apr 10
+ * **In Class**, we will do the following:
+    * Logistic Regression
 
 #### Thu, Apr 12
+ * **In Class**, we will do the following:
+    * Logistic Regression
 
 #### Fri, Apr 13
+ * **In Class**, we will do the following:
+    * Logistic Regression
 "
   )
 ```
@@ -319,10 +325,18 @@ make_week_box("week13", TRUE, "Week 13: Apr 16 -- 20",
 "
 
 #### Tue, Apr 17
+ * **In Class**, we will do the following:
+    * Introduce the multivariate normal distribution and inference for the mean parameter
 
 #### Thu, Apr 19
+ * **In Class**, we will do the following:
+    * Finish our introduction to inference for the mean parameter of the multivariate normal distribution
+    * [Multivariate Normal](mvn.html)
+    * [Shrinkage Estimators](shrinkage.html)
 
 #### Fri, Apr 20
+ * **In Class**, we will do the following:
+    * Do some applications involving inference for the mean parameter of the multivariate normal distribution
 "
   )
 ```
